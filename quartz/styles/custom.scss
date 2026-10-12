@@ -1,3 +1,26 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+/* تنظیم چینش چپ‌به‌راست برای بلوک‌های کد و شماره خطوط */
+pre,
+pre code,
+figure[data-rehype-pretty-code-figure],
+div[class*="highlight"] {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
+}
+
+/* تنظیم چینش کدهای تک‌خطی (Inline Code) درون متن */
+:not(pre) > code {
+  direction: ltr;
+  display: inline-block;
+  unicode-bidi: isolate;
+}
+
+/* اطمینان از چپ‌چین بودن فرمول‌های ریاضی بلوکی */
+.katex-display {
+  direction: ltr !important;
+  text-align: center;
+}
