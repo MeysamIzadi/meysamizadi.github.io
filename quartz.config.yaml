@@ -208,11 +208,11 @@ plugins:
       position: footer
       priority: 50
   - source: "@quartz-community/recent-notes"
-      enabled: true
-      options:
-        title: "تازه‌ترین یادداشت‌ها"
-        limit: 5
-        showTags: true
+    enabled: true
+    options:
+      title: "تازه‌ترین یادداشت‌ها"
+      limit: 5
+      showTags: true
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
