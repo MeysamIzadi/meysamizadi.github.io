@@ -1,0 +1,10 @@
+---
+title:
+aliases:
+tags:
+created:
+shamsi:
+indexes:
+Link:
+Source:
+---
