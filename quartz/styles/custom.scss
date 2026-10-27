@@ -24,3 +24,17 @@ div[class*="highlight"] {
   direction: ltr !important;
   text-align: center;
 }
+
+
+/* اجبار فرمول‌های ریاضی به چینش چپ‌به‌راست */
+.katex,
+.katex-display {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+/* وسط‌چین کردن بلوک‌های ریاضی */
+.katex-display {
+  text-align: center !important;
+  margin: 1em 0 !important;
+}
