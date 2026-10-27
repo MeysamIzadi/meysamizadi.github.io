@@ -38,3 +38,116 @@ div[class*="highlight"] {
   text-align: center !important;
   margin: 1em 0 !important;
 }
+
+
+
+// برای نمایش قضیه‌ها و جواب سوالات
+
+/* =========================================
+   قالب اختصاصی قضیه (طوسی روشن)
+   ========================================= */
+.callout[data-callout="theorem"] {
+  --color: #000000 !important;
+  --border: #000000 !important;
+  --bg: rgba(175, 175, 175, 0.25) !important;
+  --callout-color: 74, 74, 74; 
+  
+  background-color: rgba(220, 220, 220, 0.45) !important;
+  border: 1px solid #d3d3d3 !important;
+  padding: 0 !important; /* صفر کردن فاصله برای چسبیدن عنوان به لبه‌ها */
+  overflow: hidden; /* جلوگیری از بیرون زدن رنگ عنوان از گوشه‌های گرد */
+}
+
+/* نوار عنوان قضیه */
+.callout[data-callout="theorem"] > .callout-title {
+  background-color: rgba(66, 66, 66, 0.4) !important; /* پس‌زمینه تیره‌تر برای نوار عنوان */
+  border-bottom: 4px solid #757575 !important; /* خط جداکننده زیر عنوان */
+  padding: 10px 15px !important;
+  color: #333333 !important; /* رنگ متن عنوان کمی تیره‌تر */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* بخش محتوای قضیه */
+.callout[data-callout="theorem"] > .callout-content {
+  padding: 12px 15px !important;
+}
+
+
+/* =========================================
+   قالب اختصاصی پاسخ سوال (بدون پس‌زمینه، با کادر)
+   ========================================= */
+.callout[data-callout="solution"] {
+  --color: #2b2b2b !important;
+  --border: #888888 !important;
+  --bg: transparent !important;
+  --callout-color: 43, 43, 43; 
+  
+  background-color: transparent !important;
+  border: 1px solid #888888 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+/* نوار عنوان پاسخ */
+.callout[data-callout="solution"] > .callout-title {
+  background-color: rgba(175, 174, 174, 0.3) !important; /* یک طوسی بسیار ملایم فقط برای متمایز شدن عنوان */
+  border-bottom: 2px solid #888888 !important; /* خط جداکننده زیر عنوان */
+  padding: 10px 15px !important;
+  color: #1a1a1a !important;
+  font-weight: bold;
+}
+
+/* بخش محتوای پاسخ */
+.callout[data-callout="solution"] > .callout-content {
+  padding: 12px 15px !important;
+}
+
+
+/* =========================================
+   مخفی کردن آیکون‌ها در هر دو محیط
+   ========================================= */
+.callout[data-callout="theorem"] .callout-icon,
+.callout[data-callout="solution"] .callout-icon {
+  display: none !important;
+}
+
+// برای مثال‌ها
+
+/* =========================================
+   قالب اختصاصی مثال / سوال (کلاسیک و ملایم)
+   ========================================= */
+.callout[data-callout="example"] {
+  --color: #333333 !important;
+  --border: #b5b5b5 !important;
+  --bg: transparent !important;
+  --callout-color: 51, 51, 51; 
+  
+  background-color: transparent !important;
+  border: 1px solid #b5b5b5 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+/* نوار عنوان مثال */
+.callout[data-callout="example"] > .callout-title {
+  background-color: rgba(240, 240, 240, 0.9) !important; /* پس‌زمینه بسیار روشن */
+  border-bottom: 1px solid #b5b5b5 !important;
+  padding: 10px 15px !important;
+  color: #222222 !important;
+  font-weight: bold;
+}
+
+/* بخش محتوای مثال */
+.callout[data-callout="example"] > .callout-content {
+  padding: 12px 15px !important;
+}
+
+/* =========================================
+   مخفی کردن آیکون‌ها در هر سه محیط
+   ========================================= */
+.callout[data-callout="theorem"] .callout-icon,
+.callout[data-callout="solution"] .callout-icon,
+.callout[data-callout="example"] .callout-icon {
+  display: none !important;
+}
