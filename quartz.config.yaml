@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: وبلاگ من          # یا هر عنوان دلخواهی که می‌خواهید در هدر سایت نمایش داده شود
+  pageTitle: م.ایزدی         # یا هر عنوان دلخواهی که می‌خواهید در هدر سایت نمایش داده شود
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -11,6 +11,9 @@ configuration:
     - private
     - templates
     - .obsidian
+    - template
+    - attachments
+
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
@@ -130,7 +133,7 @@ plugins:
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
-    enabled: true
+    enabled: false  #I manipulate it
     layout:
       position: left
       priority: 50
